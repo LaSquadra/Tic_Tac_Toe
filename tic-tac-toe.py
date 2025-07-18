@@ -74,10 +74,12 @@ def main():
     play_again = input(Color.RED+'''
     Press ANY KEY if you would like to play again
                        /OR/
-                press CTR+C to end. 
+                press ENTER to end. 
                         ''')
-    if play_again == "y" or "Y":
+    if play_again:
         main()
+    else:
+        exit(0)
 
 
 if __name__ == "__main__":

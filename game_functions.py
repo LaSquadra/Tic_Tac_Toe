@@ -131,10 +131,10 @@ def introduction():
     sleep(1)
     clear()
     print(Color.GREEN+'''
-                   #    #     #  #####
-                  # #   # #   #  #    #
-                 # # #  #   # #  #    #
-                #     # #     #  ##### 
+                   #     #     #  #####
+                  # #    # #   #  #    #
+                 # # #   #   # #  #    #
+                #     #  #     #  ##### 
  '''+Color.END)
     sleep(0.6)
     clear()
@@ -143,11 +143,13 @@ def introduction():
  #  #  #  #      #      #       #    #  # # # #  #
  #  #  #  ###    #      #       #    #  #  #  #  ####
  #  #  #  #      #      #       #    #  #     #  #
- ## ##   ######  #####  #####   ####   #     #  ######
+  ## ##   ######  #####  #####   ####   #     #  ######
  '''+Color.END)
     sleep(1)
     clear()
-    print(Color.GREEN+"Welcome to Ryan's", Color.RED+"Tic-Tac-Toe!"+Color.END, Color.GREEN+"GLHF!\n"+Color.END)  # Greeting Message
+
+    # Greeting Message
+    print(Color.GREEN+"Welcome to Ryan's", Color.RED+"Tic-Tac-Toe!"+Color.END, Color.GREEN+"GLHF!\n"+Color.END)
 
 
 def check_win_condition(turn: int, grid: str, player: Player) -> str:
